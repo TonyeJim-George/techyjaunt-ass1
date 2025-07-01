@@ -63,7 +63,8 @@ Server will start on `http://localhost:5000`
 ## Postman Collection
 
 You can also view the documentation here:\
-(https://documenter.getpostman.com/view/40310248/2sB34ZrjFS) *
+(https://documenter.getpostman.com/view/40310248/2sB34ZrjFS) \*
+
 ---
 
 ## Assumptions & Design Decisions
@@ -86,17 +87,17 @@ You can also view the documentation here:\
 
 ```
 techyjaunt-ass1/
-│
-├── controllers/         # Request handlers (student logic)
-├── models/              # MongoDB schemas
-├── routes/              # Express route definitions
-├── config/              # DB connection
+│__ src
+  ├── controllers/         # Request handlers (student logic)
+  ├── models/              # MongoDB schemas
+  ├── routes/              # Express route definitions
+  ├── config/              # DB connection
+  ├── server.js
 ├── .env                 # Environment variables (not committed)
 ├── .gitignore
 ├── README.md
-├── server.js
-└── Student-CRUD.postman_collection.json
+
+
 ```
 
 ---
-
