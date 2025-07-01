@@ -35,7 +35,7 @@ exports.getAllStudents = async (req, res) => {
   }
 };
 
-// PUT /students/:id
+
 exports.updateStudent = async (req, res) => {
   try {
     const student = await Student.findByIdAndUpdate(
@@ -52,7 +52,7 @@ exports.updateStudent = async (req, res) => {
   }
 };
 
-// DELETE /students/:id
+
 exports.deleteStudent = async (req, res) => {
   try {
     const student = await Student.findByIdAndDelete(req.params.id);
@@ -65,7 +65,7 @@ exports.deleteStudent = async (req, res) => {
   }
 };
 
-// GET /students/count
+
 exports.getStudentCount = async (req, res) => {
   try {
     const count = await Student.countDocuments();
