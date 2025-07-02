@@ -68,8 +68,9 @@ exports.deleteStudent = async (req, res) => {
 
 exports.getStudentCount = async (req, res) => {
   try {
-    const count = await Student.countDocuments();
-    res.json({ count });
+    const students = await Student.find(); 
+    const count = students.length;         
+    res.json({ count });                   
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
